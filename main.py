@@ -15,7 +15,7 @@ app.add_middleware(
 
 # Load data once when server starts
 try:
-    with open("daa.json") as f:
+    with open("data.json") as f:
         student_data = json.load(f)
 except FileNotFoundError:
     # Create a dummy data if data.json is not found for demonstration
