@@ -32,5 +32,5 @@ def get_marks(name: list[str] = []):
     # Map names to marks
     name_to_marks = {entry["name"]: entry["marks"] for entry in student_data}
     # Get marks for each name in order, None if not found
-    marks = [name_to_marks.get(n, None) for n in name]
+    marks = [name_to_marks.get(n) for n in name]
     return {"marks": marks}
